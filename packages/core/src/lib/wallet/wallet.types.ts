@@ -119,7 +119,7 @@ export type BrowserWalletBehaviour = Modify<
     ): Promise<FinalExecutionOutcome | void>;
     signAndSendTransactions(
       params: BrowserWalletSignAndSendTransactionsParams
-    ): Promise<void>;
+    ): Promise<Array<providers.FinalExecutionOutcome> | void>;
   }
 >;
 
